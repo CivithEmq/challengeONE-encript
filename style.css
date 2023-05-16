@@ -17,16 +17,16 @@ body{
 }
 
 .logo{
-    padding-top: 30px;
-    margin-left: 70px;
-    width: 2%;
+    padding-top: 2%;
+    margin-left: 5%;
+    width: 1.9%;
 }
 
 .areatexto{
     position: absolute;
     width: 42%;
     height: 59%;
-    left: 12%;
+    left: 14%;
     top: 13%;
     border: none;
     background-color: #f3f5fc;
@@ -48,14 +48,14 @@ body{
     padding: 0px;
     gap: 8px;
     position: absolute;
-    width: 80%;
-    left: 12%;
-    top: 75.5%;
-    
+    width: 82%;
+    left: 14%;
+    top: 75.5%;   
 }
 
 .aclaracion h6{
-    font-size: 16px;
+    font-size: 17px;
+    font-style: italic;
     color: #495057;
     opacity: 0.8;
     flex: none;
@@ -71,26 +71,34 @@ body{
     position: absolute;
     gap: 3%;
     width: 80%;
-    left: 12%;
+    left: 14%;
     top: 80%;
 }
 
 .boton-encriptar{
-    width: 24%;
+    width: 24.5%;
     height: 67px;
     background-color: #0a3871;
     border-radius: 24px;
-    border: 2px solid white;
+    border: 2px solid black;
     color: white;
     cursor: pointer;
     text-align: center;
     font-size: 70%;
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
+    transition: 0.3s all;
+}
+
+.boton-encriptar:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+    transform: scale(1.1);
 }
 
 .boton-desencriptar{
-    width: 24%;
+    width: 24.5%;
     height: 67px;
     background-color: #d8dfe8;
     border-radius: 24px;
@@ -100,5 +108,63 @@ body{
     text-align: center;
     font-size: 70%;
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
+    transition: 0.3s all;
+}
+
+.boton-desencriptar:hover{
+    background-color: black;
+    border-color: white;
+    color: white;
+    transform: scale(1.1);
+}
+
+.seccionencriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 25%;
+    height: 88%;
+    left: 64%;
+    top: 5%;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.munheco{
+    position: absolute;
+    width: 80%;
+    height: 42%;
+    top: 16%;
+}
+
+.mensajeencriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 2%;
+    position: absolute;
+    width: 100%;
+    top: 61%;
+    text-align: center;
+}
+
+#titulo-mensaje{
+    width: 65%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+}
+
+#post-mensaje{
+    width: 80%;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
 }

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/Imagenes/cifrado-de-datos.png" type="image/x-icon">
     <title>Encriptador de Texto</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     </header>
     <main>
         <section>
-            <textarea class="areatexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea type="text" class="areatexto" id="areatexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             <div class="aclaracion">
                 <img src="/Imagenes/bi_exclamation-circle-fill.svg" alt="">
                 <h6> Solo letras minúsculas y sin acentos</h6>
@@ -27,12 +29,14 @@
             </div>
         </section>
         <section class="seccionencriptado">
-            <img class="munheco" src="/Imagenes/Muñeco.svg" alt="Imagen de una persona encriptando">
+            <img class="munheco" id="munheco" src="/Imagenes/Muñeco.svg" alt="Imagen de una persona encriptando">
             <div class="mensajeencriptado">
                 <h3 id="titulo-mensaje">Ningún mensaje fue encontrado</h3>
                 <p id="post-mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
-                <!-- <textarea class="mensajefinal" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <button class="copiar">Copiar</button> -->
+            </div>
+            <div>
+                <textarea type="text" class="mensajefinal" name="mensajefinal" id="mensajefinal" cols="30" rows="10" placeholder=""></textarea>
+                <button class="boton-copiar">Copiar</button>
             </div>
         </section>
     </main>

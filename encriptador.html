@@ -18,14 +18,14 @@
     </header>
     <main>
         <section>
-            <textarea type="text" class="areatexto" id="areatexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea type="text" class="areatexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             <div class="aclaracion">
                 <img src="/Imagenes/bi_exclamation-circle-fill.svg" alt="">
                 <h6> Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
-                <button class="boton-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                <button class="boton-encriptar" type="button" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" type="button" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
         <section class="seccionencriptado">
@@ -35,7 +35,7 @@
                 <p id="post-mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
             <div>
-                <textarea type="text" class="mensajefinal" name="mensajefinal" id="mensajefinal" cols="30" rows="10" placeholder=""></textarea>
+                <textarea type="text" class="mensajefinal" name="mensajefinal" cols="30" rows="10" placeholder=""></textarea>
                 <button class="boton-copiar">Copiar</button>
             </div>
         </section>

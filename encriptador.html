@@ -9,16 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/Imagenes/cifrado-de-datos.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Imagenes/cifrado-de-datos.png" type="image/x-icon">
     <title>Encriptador de Texto</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="/Imagenes/Logo.svg" alt="Logo de AluraLatam">
+        <img class="logo" src="Imagenes/Logo.svg" alt="Logo de AluraLatam">
     </header>
     <main>
         <section>
-            <textarea type="text" class="areatexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea type="text" class="areatexto" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
             <div class="aclaracion">
                 <img src="/Imagenes/bi_exclamation-circle-fill.svg" alt="">
                 <h6> Solo letras minúsculas y sin acentos</h6>
@@ -29,14 +29,14 @@
             </div>
         </section>
         <section class="seccionencriptado">
-            <img class="munheco" id="munheco" src="/Imagenes/Muñeco.svg" alt="Imagen de una persona encriptando">
+            <img class="munheco" id="munheco" src="Imagenes/Muñeco.svg" alt="Imagen de una persona encriptando">
             <div class="mensajeencriptado">
                 <h3 id="titulo-mensaje">Ningún mensaje fue encontrado</h3>
                 <p id="post-mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
             <div>
                 <textarea type="text" class="mensajefinal" name="mensajefinal" cols="30" rows="10" placeholder=""></textarea>
-                <button class="boton-copiar">Copiar</button>
+                <button class="boton-copiar" type="button" onclick="Copiar()">Copiar</button>
             </div>
         </section>
     </main>
@@ -48,7 +48,7 @@
             <p>Teléfono: +51 984923624</p>
         </div>
         <div class="imagen-footer">
-            <img class="candado" src="/Imagenes/encriptado.png" alt="">
+            <img class="candado" src="Imagenes/encriptado.png" alt="">
             <p class="Copyright">&copy Copyright Vargas - 2023</p>
         </div>
     </footer>
